@@ -38,6 +38,10 @@ If you need support, please open an issue on GitHub.
 
 See also the list of [contributors](https://github.com/deluair/RNAseq/contributors) who participated in this project.
 
+## Versioning
+
+We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/deluair/RNAseq/tags).
+
 ## Badges
 
 [![CI](https://github.com/deluair/RNAseq/actions/workflows/ci.yml/badge.svg)](https://github.com/deluair/RNAseq/actions/workflows/ci.yml)
