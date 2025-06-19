@@ -8,6 +8,12 @@ This repository contains a comprehensive platform for RNA-seq data analysis, fro
 
 ![Web App Screenshot](https://i.imgur.com/your-screenshot.png) <!-- Replace with an actual screenshot -->
 
+## Screenshots
+
+| ![Web App Screenshot](https://i.imgur.com/your-screenshot.png) |
+|:--:|
+| *Web App* |
+
 ## Badges
 
 [![CI](https://github.com/deluair/RNAseq/actions/workflows/ci.yml/badge.svg)](https://github.com/deluair/RNAseq/actions/workflows/ci.yml)
