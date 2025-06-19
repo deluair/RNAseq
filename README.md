@@ -32,6 +32,12 @@ This project was inspired by the work of others.
 
 If you need support, please open an issue on GitHub.
 
+## Authors
+
+- **M. Deluair Hossen** - *Initial work* - [deluair](https://github.com/deluair)
+
+See also the list of [contributors](https://github.com/deluair/RNAseq/contributors) who participated in this project.
+
 ## Badges
 
 [![CI](https://github.com/deluair/RNAseq/actions/workflows/ci.yml/badge.svg)](https://github.com/deluair/RNAseq/actions/workflows/ci.yml)
