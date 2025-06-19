@@ -1,6 +1,6 @@
 # Contributing
 
-We welcome contributions to this project. Please read our code of conduct, and the process for submitting pull requests to us.
+We welcome contributions to this project. Please read our [Code of Conduct](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 ## Code of Conduct
 
