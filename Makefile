@@ -1,4 +1,7 @@
-.PHONY: test lint install clean all
+.PHONY: test lint install clean all run
+
+run:
+	python app.py --port 5001
 
 all: install lint test
 
