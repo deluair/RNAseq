@@ -1,4 +1,7 @@
-.PHONY: test lint install clean all run demo full_analysis
+.PHONY: test lint install clean all run demo full_analysis manuscript
+
+manuscript:
+	cd manuscript && make
 
 full_analysis:
 	python run_full_analysis.py
