@@ -1,5 +1,7 @@
 # RNA-seq Analysis Platform
 
+[![CI](https://github.com/deluair/RNAseq/actions/workflows/ci.yml/badge.svg)](https://github.com/deluair/RNAseq/actions/workflows/ci.yml)
+
 This repository contains a comprehensive platform for RNA-seq data analysis, from raw data retrieval to differential expression and splicing analysis. It features a user-friendly web interface and a powerful command-line pipeline, making it suitable for both biologists and bioinformaticians. The platform is designed to be robust, with features like automatic retry mechanisms for API calls and fallback mock data generation.
 
 ![Web App Screenshot](https://i.imgur.com/your-screenshot.png) <!-- Replace with an actual screenshot -->
