@@ -1,4 +1,7 @@
-.PHONY: test lint install clean all run demo
+.PHONY: test lint install clean all run demo full_analysis
+
+full_analysis:
+	python run_full_analysis.py
 
 demo:
 	python demo.py
