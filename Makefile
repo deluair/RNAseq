@@ -1,4 +1,6 @@
-.PHONY: test lint install clean
+.PHONY: test lint install clean all
+
+all: install lint test
 
 clean:
 	find . -type f -name '*.pyc' -delete
