@@ -212,4 +212,21 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Getting Involved
 
-We welcome contributions to this project. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. 
+We welcome contributions to this project. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Citation
+
+If you use this software, please cite it as below.
+
+```
+@software{hossen_2024_rnaseq,
+  author       = {Hossen, M. Deluair},
+  title        = {{RNA-seq Analysis Platform}},
+  month        = jan,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.1234},
+  url          = {https://doi.org/10.5281/zenodo.1234}
+}
+``` 
