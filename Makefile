@@ -1,4 +1,7 @@
-.PHONY: test lint
+.PHONY: test lint install
+
+install:
+	pip install -r requirements.txt
 
 test:
 	python -m unittest discover tests
