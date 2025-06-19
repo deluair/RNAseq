@@ -13,4 +13,23 @@ We are committed to providing a friendly, safe and welcoming environment for all
 3. Make your changes.
 4. Commit your changes (`git commit -m 'Add some feature'`).
 5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Open a pull request. 
+6. Open a pull request.
+
+## Bug Reports
+
+Please open an issue on GitHub and provide as much detail as possible. Include the following information:
+- A clear and descriptive title.
+- A description of the problem.
+- Steps to reproduce the problem.
+- The expected behavior.
+- The actual behavior.
+- Your operating system and version.
+- The version of the software you are using.
+
+## Feature Requests
+
+Please open an issue on GitHub and provide as much detail as possible. Include the following information:
+- A clear and descriptive title.
+- A description of the feature you would like to see.
+- A use case for the feature.
+- Any other information that you think would be helpful. 
