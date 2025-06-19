@@ -28,6 +28,10 @@ If you have any questions, please contact us at deluair@gmail.com.
 
 This project was inspired by the work of others.
 
+## Support
+
+If you need support, please open an issue on GitHub.
+
 ## Badges
 
 [![CI](https://github.com/deluair/RNAseq/actions/workflows/ci.yml/badge.svg)](https://github.com/deluair/RNAseq/actions/workflows/ci.yml)
