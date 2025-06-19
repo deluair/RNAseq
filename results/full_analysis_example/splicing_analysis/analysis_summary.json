@@ -1,0 +1,18 @@
+{
+  "n_samples": 6,
+  "total_junctions": 5472,
+  "as_events_count": {
+    "SE": 53,
+    "MXE": 73,
+    "A3SS": 95,
+    "A5SS": 148,
+    "RI": 64
+  },
+  "differential_analysis": true,
+  "files_generated": [
+    "splice_junctions.csv",
+    "splicing_efficiency.csv",
+    "splicing_report.html",
+    "plots/splicing_overview.png"
+  ]
+}

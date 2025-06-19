@@ -1,0 +1,45 @@
+# Sample RNA-seq Analysis Configuration
+
+# Data Retrieval Settings
+data_retrieval:
+  organism: "Glycine max"
+  search_queries:
+    - "soybean RNA-seq"
+  max_results_per_query: 5
+  output_directory: "data/raw"
+
+# Quality Control Settings
+quality_control:
+  threads: 4
+  output_directory: "results/qc"
+
+# Alignment Settings
+alignment:
+  aligner: "STAR"
+  threads: 4
+  memory_limit: "32G"
+  output_directory: "results/alignment"
+  genome_directory: "genome_index"
+
+# Reference Genome Settings
+reference_genome:
+  organism: "Glycine max"
+  genome_fasta: "data/reference/Glycine_max_v4.0.fa"
+  gtf_file: "data/reference/Glycine_max_v4.0.gtf"
+  index_directory: "genome_index"
+
+# Sample Information
+samples:
+  - id: "SRR12345678"
+    name: "soybean_control_1"
+    condition: "control"
+    replicate: 1
+
+# Pipeline Steps
+pipeline:
+  steps:
+    - "data_retrieval"
+    - "quality_control"
+    - "alignment"
+    - "visualization"
+  skip_completed: true

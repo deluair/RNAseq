@@ -1,0 +1,115 @@
+# Soybean RNA-seq Analysis Configuration
+
+# Data Retrieval Settings
+data_retrieval:
+  organism: "Glycine max"
+  search_queries:
+    - "soybean RNA-seq"
+    - "Glycine max transcriptome"
+    - "soybean stress RNA-seq"
+    - "soybean development RNA-seq"
+  max_results_per_query: 10
+  output_directory: "data/raw"
+
+# Quality Control Settings
+quality_control:
+  threads: 4
+  output_directory: "results/qc"
+  fastqc_settings:
+    noextract: true
+    quiet: false
+  multiqc_settings:
+    filename: "multiqc_report"
+
+# Alignment Settings
+alignment:
+  aligner: "STAR"
+  threads: 4
+  memory_limit: "32G"
+  output_directory: "results/alignment"
+  genome_directory: "genome_index"
+  star_settings:
+    outSAMtype: "BAM SortedByCoordinate"
+    outSAMunmapped: "Within"
+    outSAMattributes: "Standard"
+    quantMode: "GeneCounts"
+    twopassMode: "Basic"
+
+# Reference Genome Settings
+reference_genome:
+  organism: "Glycine max"
+  version: "Wm82.a4.v1"
+  genome_fasta: "data/reference/Glycine_max_v4.0.fa"
+  gtf_file: "data/reference/Glycine_max_v4.0.gtf"
+  index_directory: "genome_index"
+
+# Quantification Settings
+quantification:
+  method: "featureCounts"
+  threads: 4
+  output_directory: "results/quantification"
+  feature_type: "gene"
+  attribute: "gene_id"
+
+# Differential Expression Settings
+differential_expression:
+  method: "DESeq2"
+  output_directory: "results/differential_expression"
+  conditions:
+    - name: "control"
+      samples: []
+    - name: "treatment"
+      samples: []
+  thresholds:
+    log2_fold_change: 1.0
+    adjusted_p_value: 0.05
+
+# Visualization Settings
+visualization:
+  output_directory: "results/plots"
+  plot_types:
+    - "quality_control"
+    - "alignment"
+    - "expression"
+    - "differential_expression"
+  interactive_plots: true
+  static_plots: true
+  report_format: "html"
+
+# Sample Information
+samples:
+  - id: "SRR12345678"
+    name: "soybean_control_1"
+    condition: "control"
+    replicate: 1
+  - id: "SRR12345679"
+    name: "soybean_control_2"
+    condition: "control"
+    replicate: 2
+  - id: "SRR12345680"
+    name: "soybean_treatment_1"
+    condition: "treatment"
+    replicate: 1
+  - id: "SRR12345681"
+    name: "soybean_treatment_2"
+    condition: "treatment"
+    replicate: 2
+
+# Analysis Pipeline Steps
+pipeline:
+  steps:
+    - "data_retrieval"
+    - "quality_control"
+    - "alignment"
+    - "quantification"
+    - "differential_expression"
+    - "visualization"
+  skip_completed: true
+  parallel_jobs: 2
+
+# Output Settings
+output:
+  create_reports: true
+  create_summary: true
+  save_intermediate: false
+  compression: true 
