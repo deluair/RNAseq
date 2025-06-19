@@ -36,4 +36,8 @@ Please open an issue on GitHub and provide as much detail as possible. Include t
 
 ## Styleguides
 
-We use [PEP 8](https://www.python.org/dev/peps/pep-0008/) as a style guide for Python code. 
+We use [PEP 8](https://www.python.org/dev/peps/pep-0008/) as a style guide for Python code.
+
+## Branching Model
+
+We use the [GitHub flow](https://guides.github.com/introduction/flow/) branching model. 
