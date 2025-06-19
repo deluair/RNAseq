@@ -24,6 +24,10 @@ This repository contains a comprehensive platform for RNA-seq data analysis, fro
 
 If you have any questions, please contact us at deluair@gmail.com.
 
+## Acknowledgements
+
+This project was inspired by the work of others.
+
 ## Badges
 
 [![CI](https://github.com/deluair/RNAseq/actions/workflows/ci.yml/badge.svg)](https://github.com/deluair/RNAseq/actions/workflows/ci.yml)
