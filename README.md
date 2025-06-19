@@ -125,11 +125,22 @@ brew install R
 
 ## Usage
 
+You can use the `Makefile` for common tasks:
+- `make install`: Install dependencies.
+- `make lint`: Lint the code.
+- `make test`: Run tests.
+- `make run`: Run the web application.
+- `make demo`: Run the demo script.
+- `make full_analysis`: Run the full analysis script.
+- `make manuscript`: Compile the manuscript.
+- `make clean`: Remove temporary files.
+- `make all`: Install, lint, and test.
+
 ### Web Application
 
 To start the web application, run:
 ```bash
-python app.py --port 5001
+make run
 ```
 The application will be accessible at `http://127.0.0.1:5001`. The web interface allows you to:
 -   Search for and download datasets from NCBI.
@@ -141,7 +152,7 @@ The application will be accessible at `http://127.0.0.1:5001`. The web interface
 
 The `demo.py` script runs a small, pre-configured analysis on sample data.
 ```bash
-python demo.py
+make demo
 ```
 This will generate sample reports in the `demo_results/` directory.
 
@@ -149,7 +160,7 @@ This will generate sample reports in the `demo_results/` directory.
 
 The `run_full_analysis.py` script executes the complete end-to-end pipeline using mock data. This is useful for testing the integration of all modules.
 ```bash
-python run_full_analysis.py
+make full_analysis
 ```
 This script simulates a full analysis run, including DE and splicing analysis, and generates a comprehensive HTML report in `results/full_analysis_example/`.
 
@@ -157,8 +168,7 @@ This script simulates a full analysis run, including DE and splicing analysis, a
 
 A LaTeX manuscript template is provided in the `manuscript/` directory. After running an analysis, you can compile the manuscript to a PDF.
 ```bash
-cd manuscript/
-make
+make manuscript
 ```
 This will produce a `soybean_drought_rnaseq.pdf` file.
 
