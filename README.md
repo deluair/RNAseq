@@ -119,7 +119,7 @@ brew install R
     ```
 
 5.  **Download Reference Genome and Annotation**:
-    Place your reference genome (`.fa`) and gene annotation (`.gtf`) files in the `data/reference/` directory. Example files for soybean are provided.
+    Place your reference genome (`.fa`) and gene annotation (`.gtf`) files in the `data/reference/` directory. Example files for soybean are provided. Note that these files are not tracked by Git and must be acquired separately.
 
 ## Usage
 
