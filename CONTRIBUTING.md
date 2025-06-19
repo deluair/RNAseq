@@ -32,4 +32,8 @@ Please open an issue on GitHub and provide as much detail as possible. Include t
 - A clear and descriptive title.
 - A description of the feature you would like to see.
 - A use case for the feature.
-- Any other information that you think would be helpful. 
+- Any other information that you think would be helpful.
+
+## Styleguides
+
+We use [PEP 8](https://www.python.org/dev/peps/pep-0008/) as a style guide for Python code. 
